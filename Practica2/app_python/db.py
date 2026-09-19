@@ -4,9 +4,9 @@ import psycopg2
 
 def obtener_conexion():
     return psycopg2.connect(
-        host=os.getenv("DB_HOST", "localhost"),
-        port=os.getenv("DB_PORT", "5005"),
-        database=os.getenv("DB_NAME", "taskflow_db"),
-        user=os.getenv("DB_USER", "postgres"),
-        password=os.getenv("DB_PASSWORD", "postgres")
+        host=os.getenv("DB_HOST", "database-1.cvqk40caiisr.us-east-2.rds.amazonaws.com"),
+        port=os.getenv("DB_PORT", "3306"),
+        database=os.getenv("DB_NAME", "db-1"),
+        user=os.getenv("DB_USER", "admin"),
+        password=os.getenv("DB_PASSWORD", "}+sicvn)Q_x4~.9")
     )
