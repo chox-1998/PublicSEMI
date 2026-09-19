@@ -7,7 +7,7 @@ const archivosRoutes = require("./routes/archivos");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({origin: "http://practica2frontend.s3-website.us-east-2.amazonaws.com/"}));
 app.use(express.json());
 
 app.use("/usuarios", usuariosRoutes);
