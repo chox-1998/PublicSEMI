@@ -1,11 +1,10 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 from werkzeug.security import generate_password_hash, check_password_hash
 from db import obtener_conexion
-import jsonify
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["http://practica2frontend.s3-website.us-east-2.amazonaws.com/"])
 
 
 @app.route("/")
