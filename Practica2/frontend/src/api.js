@@ -1,5 +1,5 @@
-const API_PYTHON = "http://localhost:5000";
-const API_NODE = "http://localhost:5001";
+const API_PYTHON = "http://mi-alb-123456789.us-east-1.elb.amazonaws.com:5000";
+const API_NODE = "http://mi-alb-123456789.us-east-1.elb.amazonaws.com:5001";
 
 export {
     API_PYTHON,

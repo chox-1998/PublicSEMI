@@ -15,6 +15,13 @@ def inicio():
     }
 
 
+@app.route("/health", methods=["GET"])
+def health():
+    return jsonify({
+        "message": "CloudCinema Python backend funcionando",
+        "success": True
+    }), 200
+
 @app.route("/db-test")
 def db_test():
     try:

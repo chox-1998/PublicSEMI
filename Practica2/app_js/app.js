@@ -20,6 +20,13 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get('/health', (req, res) => {
+    res.status(200).json({
+        message: "CloudCinema JavaScript backend funcionando",
+        success: true
+    });
+});
+
 app.get("/db-test", async (req, res) => {
     try {
         const result = await pool.query("SELECT NOW()");
