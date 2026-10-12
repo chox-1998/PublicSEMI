@@ -1,0 +1,61 @@
+.foto-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foto-input-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.foto-input img,
+.foto-input video,
+.foto-input-vacia {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #d3d9e2;
+    background: #f3f5f8;
+}
+
+.foto-input-vacia {
+    display: grid;
+    place-items: center;
+    color: #6b7686;
+    font-size: 0.9rem;
+}
+
+.foto-input-acciones {
+    display: flex;
+    gap: 8px;
+}
+
+.foto-input-acciones > * {
+    flex: 1;
+}
+
+.foto-input button,
+.foto-input-boton {
+    font: inherit;
+    padding: 9px 12px;
+    border-radius: 6px;
+    border: 1px solid #1f4fa5;
+    background: #1f4fa5;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.foto-input button.secundario,
+.foto-input-boton.secundario {
+    background: transparent;
+    color: #1f4fa5;
+}
+
+.foto-input button:focus-visible,
+.foto-input-boton:focus-within {
+    outline: 2px solid #1f4fa5;
+    outline-offset: 2px;
+}
